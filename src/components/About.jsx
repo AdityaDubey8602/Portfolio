@@ -1,5 +1,5 @@
 import React from "react";
-import Tilt from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -8,19 +8,18 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[250px] w-full">
+  <Tilt
+    tiltMaxAngleX={45}
+    tiltMaxAngleY={45}
+    scale={1}
+    transitionSpeed={450}
+    className="xs:w-[250px] w-full"
+  >
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
     >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
-      >
+      <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
         <img
           src={icon}
           alt="web-development"
@@ -47,22 +46,26 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        "I am a Software Engineer hailing from the vibrant city of Indore,
-        proudly contributing my expertise to the dynamic team at Persistent
-        Systems. My technical prowess is rooted in Java, Spring Boot, and
-        React.js, allowing me to craft elegant solutions and create seamless
-        user experiences.
+        I am a Software Engineer hailing from the vibrant city of Indore, driven
+        by a deep curiosity for building systems that scale and perform under
+        real-world demands. I bring my expertise in Java and Spring Boot to
+        craft robust backend architectures, high-performance APIs, and
+        enterprise-grade solutions that power critical business workflows.
         <br />
         <br />
-        Throughout my career, I have ventured into diverse domains, conquering
-        challenges in fields as intricate as banking. One of my proudest
-        achievements was playing a pivotal role in delivering the groundbreaking
-        EHUB project for the National Payments Corporation of India (NPCI).
+        Throughout my professional journey, I have navigated diverse and
+        demanding domains, from financial systems to compliance-driven
+        enterprise platforms, tackling challenges where precision, security, and
+        reliability are non-negotiable. I’ve played a key role in delivering
+        large-scale systems involving secure transactions, XML/XSD validation,
+        and digital signature integrations, built to operate seamlessly at
+        scale.
         <br />
         <br />
-        With a passion for innovation and a dedication to excellence, I am
-        constantly pushing boundaries and thriving in the ever-evolving world of
-        technology."
+        With a strong passion for innovation and an eye for clean, efficient
+        design, I continuously push boundaries—refining architectures,
+        optimizing performance, and embracing modern backend practices—while
+        thriving in the ever-evolving landscape of technology.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

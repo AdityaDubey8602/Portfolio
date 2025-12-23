@@ -19,9 +19,9 @@ const Hero = () => {
             Hi, I'm <span className="text-[#915EFF]">Aditya</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I'm a Software Engineer at Persistent Systems{" "}
-            <br className="sm:block hidden" /> with a profound passion for web
-            and app development.
+            I'm a Software Developer focused on building scalable backend{" "}
+            <br className="sm:block hidden" />
+            systems and high-performance APIs using Java and Spring Boot.
           </p>
         </div>
       </div>

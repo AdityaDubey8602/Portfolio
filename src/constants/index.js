@@ -31,6 +31,9 @@ import portfolio from "../assets/portfolio.png";
 import oldPortfolio from "../assets/oldPortfolio.png";
 
 import persistent from "../assets/company/persistent.png";
+import prana from "../assets/company/Prana_1.png";
+import micro1 from "../assets/company/micro1.png";
+import cis from "../assets/company/cis.jpg";
 import java from "../assets/tech/java.png";
 import spring from "../assets/tech/spring.png";
 import sql from "../assets/tech/sql.png";
@@ -52,10 +55,6 @@ export const navLinks = [
 
 const services = [
   {
-    title: "React.JS",
-    icon: web,
-  },
-  {
     title: "Java",
     icon: mobile,
   },
@@ -67,16 +66,20 @@ const services = [
     title: "MySQL",
     icon: creator,
   },
+  {
+    title: "React.JS",
+    icon: web,
+  },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Java",
+    icon: java,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Spring Boot",
+    icon: spring,
   },
   {
     name: "JavaScript",
@@ -87,76 +90,83 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Java",
-    icon: java,
+    name: "MySQl",
+    icon: sql,
   },
   {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
-  },
-  {
-    name: "Spring Boot",
-    icon: spring,
-  },
-  {
-    name: "MySQl",
-    icon: sql,
   },
 ];
 
 const experiences = [
   {
-    title: "Intern",
-    company_name: "Persistent Systems",
-    icon: persistent,
-    iconBg: "#383E56",
-    date: "January 2022 - June 2022",
-    points: [
-      "Learned backend technologies including Java, Spring Framework, and database tools from industry experts.",
-      "Received training in these technologies and successfully passed internal tests with a score of over 80%.",
-    ],
-  },
-  {
-    title: "Backend Developer",
+    title: "Software Engineer",
     company_name: "Persistent Systems",
     icon: persistent,
     iconBg: "#E6DEDD",
-    date: "June 2022 - March 2023",
+    date: "January 2022 - January 2024",
     points: [
-      "Worked on eHub, a web application managing entities,hierarchies, and users of payment systems.",
-      "Integrated Prepaid Payment Instrument (PPI) module, focusing on card management, funds load, and customer registration.",
-      "Fixed defects identified during testing, and developed Restfulservice controllers, application service classes, and repositories.",
-      "Utilized Java 8, Spring Boot, Restful web services, Hibernate,IntelliJ Idea, PostgreSQL, Tomcat, Git, and Gradle.",
+      "Developed scalable backend modules using Java and Spring Boot, supporting 50K+ monthly transactions.",
+      "Integrated Azure AD Single Sign-On (SSO), reducing authentication failures by 40%.",
+      "Played a key role in migrating a monolithic system to microservices, cutting deployment time from hours to under 15 minutes.",
+      "Improved service uptime to 99.7% by enhancing system reliability and monitoring.",
+      "Worked extensively with REST APIs, Hibernate/JPA, PostgreSQL, Git, and CI/CD pipelines in an agile environment.",
     ],
   },
   {
-    title: "Front End Web Developer",
-    company_name: "Persistent Systems",
-    icon: persistent,
+    title: "Software Engineer – AI Trainer",
+    company_name: "Micro1",
+    icon: micro1,
     iconBg: "#383E56",
-    date: "March 2023 - May 2023",
+    date: "February 2024 - April 2024",
     points: [
-      "Created an application for Project Managers, Delivery Partners, and Delivery Heads at Persistent Systems.",
-      "Provided project information, including team size, weekly report due dates, and project health.",
-      "Implemented Login module with Single Sign-On, Dashboard, and master table creation in the database.",
-      "Collaborated with a team of five as a Fullstack developer.",
-      "Employed Java 8, Spring Boot, Hibernate, HTML, CSS,JavaScript, React JS, IntelliJ Idea, VS Code, PostgreSQL, Git, and Gradle.",
+      "Engineered AI data pipelines and validation workflows that increased model accuracy by 15–20%.",
+      "Designed structured data-cleaning frameworks, reducing annotation errors by 35%.",
+      "Documented processes and workflows to improve collaboration and development efficiency across teams.",
+    ],
+  },
+  {
+    title: "Software Engineer",
+    company_name: "Prana",
+    icon: prana,
+    iconBg: "#E6DEDD",
+    date: "May 2024 - October 2024",
+    points: [
+      "Led full-stack feature development using Java, Spring Boot, and React, accelerating delivery cycles by 40%.",
+      "Identified and resolved backend bottlenecks by optimizing database queries, improving load times by 35%.",
+      "Enhanced application stability by reducing production errors by 28% in client-facing systems.",
+      "Collaborated with remote teams in an agile setup to deliver high-quality, scalable solutions.",
+    ],
+  },
+  {
+    title: "Software Developer",
+    company_name: "Cyber Infrastructure",
+    icon: cis,
+    iconBg: "#383E56",
+    date: "October 2024 - Present",
+    points: [
+      "Contributed across all phases of the SDLC while building enterprise-grade backend systems using Java and Spring Boot.",
+      "Designed and developed RESTful microservices that improved system response times by 25–30%.",
+      "Implemented XML/XSD validation and digital signature workflows, achieving 99% processing accuracy.",
+      "Deployed modular Spring Boot services that reduced inter-service latency by 22% and improved overall reliability.",
+      "Worked closely with cross-functional teams to enforce clean architecture and reduce defect rates by 18%.",
     ],
   },
 ];
@@ -172,18 +182,18 @@ const testimonials = [
   },
   {
     testimonial:
+      "Awarded Star Performer in New Services for ownership, timely delivery, and high-impact contributions to reliable enterprise backend production systems.",
+    name: "Star Performer",
+    designation: "",
+    company: "Cyber Infrastructure",
+    image: cis,
+  },
+  {
+    testimonial:
       "Secured the top position in a challenging competition where we orchestrated a thriving business within three days, turning our investments into substantial profits",
     name: "One Dollor Venture",
     designation: "",
     company: "CIED - E-Cell",
-    image: cied,
-  },
-  {
-    testimonial:
-      "Secured the coveted first position at the Indore Nodal Inter College Fine Art Competition, a testament to my artistic prowess and creativity.",
-    name: "College Fine Art Competition",
-    designation: "",
-    company: "SKITM",
     image: cied,
   },
 ];
